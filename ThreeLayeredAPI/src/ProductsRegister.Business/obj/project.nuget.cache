@@ -1,8 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "tgWSL+PQIgBOVq0AuLI3quyICdzb2YQHYGg6sKwqBxBo5SYB8pJ2H3GmS1KLeAlgD/8dWWEF7weyRi0CGcRf1A==",
+  "dgSpecHash": "TU3bE6RzROCd7IMCPDuit3JQk6X/TS+7DI0Cd+dfztN+ruyJTguPfzoWN6u0JL4/39WbSTc25gtVjXnD3Wn4nQ==",
   "success": true,
   "projectFilePath": "C:\\dev\\three-layer-archtecture\\ThreeLayeredAPI\\src\\ProductsRegister.Business\\ProductsRegister.Business.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\tapio\\.nuget\\packages\\fluentvalidation\\11.7.1\\fluentvalidation.11.7.1.nupkg.sha512"
+  ],
   "logs": []
 }
