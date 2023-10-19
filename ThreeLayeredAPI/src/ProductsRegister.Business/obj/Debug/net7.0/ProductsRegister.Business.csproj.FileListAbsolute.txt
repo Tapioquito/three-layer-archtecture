@@ -1,0 +1,12 @@
+C:\dev\three-layer-archtecture\ThreeLayeredAPI\src\ProductsRegister.Business\obj\Debug\net7.0\ProductsRegister.Business.csproj.AssemblyReference.cache
+C:\dev\three-layer-archtecture\ThreeLayeredAPI\src\ProductsRegister.Business\obj\Debug\net7.0\ProductsRegister.Business.GeneratedMSBuildEditorConfig.editorconfig
+C:\dev\three-layer-archtecture\ThreeLayeredAPI\src\ProductsRegister.Business\obj\Debug\net7.0\ProductsRegister.Business.AssemblyInfoInputs.cache
+C:\dev\three-layer-archtecture\ThreeLayeredAPI\src\ProductsRegister.Business\obj\Debug\net7.0\ProductsRegister.Business.AssemblyInfo.cs
+C:\dev\three-layer-archtecture\ThreeLayeredAPI\src\ProductsRegister.Business\obj\Debug\net7.0\ProductsRegister.Business.csproj.CoreCompileInputs.cache
+C:\dev\three-layer-archtecture\ThreeLayeredAPI\src\ProductsRegister.Business\bin\Debug\net7.0\ProductsRegister.Business.deps.json
+C:\dev\three-layer-archtecture\ThreeLayeredAPI\src\ProductsRegister.Business\bin\Debug\net7.0\ProductsRegister.Business.dll
+C:\dev\three-layer-archtecture\ThreeLayeredAPI\src\ProductsRegister.Business\bin\Debug\net7.0\ProductsRegister.Business.pdb
+C:\dev\three-layer-archtecture\ThreeLayeredAPI\src\ProductsRegister.Business\obj\Debug\net7.0\ProductsRegister.Business.dll
+C:\dev\three-layer-archtecture\ThreeLayeredAPI\src\ProductsRegister.Business\obj\Debug\net7.0\refint\ProductsRegister.Business.dll
+C:\dev\three-layer-archtecture\ThreeLayeredAPI\src\ProductsRegister.Business\obj\Debug\net7.0\ProductsRegister.Business.pdb
+C:\dev\three-layer-archtecture\ThreeLayeredAPI\src\ProductsRegister.Business\obj\Debug\net7.0\ref\ProductsRegister.Business.dll

@@ -1,6 +1,10 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\ThreeLayeredAPI",
+    "\\ThreeLayeredAPI\\src",
+    "\\ThreeLayeredAPI\\src\\ProductsRegister.Business"
   ],
+  "SelectedNode": "\\ThreeLayeredAPI\\ThreeLayeredAPI.sln",
   "PreviewInSolutionExplorer": false
 }

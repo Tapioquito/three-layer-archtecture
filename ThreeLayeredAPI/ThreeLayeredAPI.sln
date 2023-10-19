@@ -7,6 +7,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ProductsRegister.Business",
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ProductsRegister.Data", "src\ProductsRegister.Data\ProductsRegister.Data.csproj", "{89AF4C3F-A55B-4EC2-BA85-D4EFB6137FA5}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProductsRegister.API", "src\ProductsRegister.API\ProductsRegister.API.csproj", "{EE04323D-F77A-4FA9-B7A0-09E872A851EA}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{89AF4C3F-A55B-4EC2-BA85-D4EFB6137FA5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{89AF4C3F-A55B-4EC2-BA85-D4EFB6137FA5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{89AF4C3F-A55B-4EC2-BA85-D4EFB6137FA5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EE04323D-F77A-4FA9-B7A0-09E872A851EA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EE04323D-F77A-4FA9-B7A0-09E872A851EA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EE04323D-F77A-4FA9-B7A0-09E872A851EA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EE04323D-F77A-4FA9-B7A0-09E872A851EA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

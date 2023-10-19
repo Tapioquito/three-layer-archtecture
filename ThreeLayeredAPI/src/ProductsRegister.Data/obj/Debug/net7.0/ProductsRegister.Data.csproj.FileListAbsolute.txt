@@ -1,0 +1,17 @@
+C:\dev\three-layer-archtecture\ThreeLayeredAPI\src\ProductsRegister.Data\bin\Debug\net7.0\ProductsRegister.Data.deps.json
+C:\dev\three-layer-archtecture\ThreeLayeredAPI\src\ProductsRegister.Data\bin\Debug\net7.0\ProductsRegister.Data.dll
+C:\dev\three-layer-archtecture\ThreeLayeredAPI\src\ProductsRegister.Data\bin\Debug\net7.0\ProductsRegister.Data.pdb
+C:\dev\three-layer-archtecture\ThreeLayeredAPI\src\ProductsRegister.Data\obj\Debug\net7.0\ProductsRegister.Data.GeneratedMSBuildEditorConfig.editorconfig
+C:\dev\three-layer-archtecture\ThreeLayeredAPI\src\ProductsRegister.Data\obj\Debug\net7.0\ProductsRegister.Data.AssemblyInfoInputs.cache
+C:\dev\three-layer-archtecture\ThreeLayeredAPI\src\ProductsRegister.Data\obj\Debug\net7.0\ProductsRegister.Data.AssemblyInfo.cs
+C:\dev\three-layer-archtecture\ThreeLayeredAPI\src\ProductsRegister.Data\obj\Debug\net7.0\ProductsRegister.Data.csproj.CoreCompileInputs.cache
+C:\dev\three-layer-archtecture\ThreeLayeredAPI\src\ProductsRegister.Data\obj\Debug\net7.0\ProductsRegister.Data.dll
+C:\dev\three-layer-archtecture\ThreeLayeredAPI\src\ProductsRegister.Data\obj\Debug\net7.0\refint\ProductsRegister.Data.dll
+C:\dev\three-layer-archtecture\ThreeLayeredAPI\src\ProductsRegister.Data\obj\Debug\net7.0\ProductsRegister.Data.pdb
+C:\dev\three-layer-archtecture\ThreeLayeredAPI\src\ProductsRegister.Data\obj\Debug\net7.0\ref\ProductsRegister.Data.dll
+C:\dev\three-layer-archtecture\ThreeLayeredAPI\src\ProductsRegister.Data\bin\Debug\net7.0\ProductsRegister.Data.runtimeconfig.json
+C:\dev\three-layer-archtecture\ThreeLayeredAPI\src\ProductsRegister.Data\bin\Debug\net7.0\ProductsRegister.Business.dll
+C:\dev\three-layer-archtecture\ThreeLayeredAPI\src\ProductsRegister.Data\bin\Debug\net7.0\ProductsRegister.Business.pdb
+C:\dev\three-layer-archtecture\ThreeLayeredAPI\src\ProductsRegister.Data\obj\Debug\net7.0\ProductsRegister.Data.csproj.AssemblyReference.cache
+C:\dev\three-layer-archtecture\ThreeLayeredAPI\src\ProductsRegister.Data\obj\Debug\net7.0\ProductsRegister.Data.csproj.CopyComplete
+C:\dev\three-layer-archtecture\ThreeLayeredAPI\src\ProductsRegister.Data\obj\Debug\net7.0\ProductsRegister.Data.genruntimeconfig.cache
