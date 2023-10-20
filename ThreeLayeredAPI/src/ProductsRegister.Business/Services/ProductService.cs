@@ -16,6 +16,12 @@ namespace ProductsRegister.Business.Services
         public async Task Add(Product product)
         {
             if (!ExecuteValidation(new ProductValidation(), product)) return;
+            var existingProduct = _productRepository.GetById(product.Id);
+            if(existingProduct != null)
+            {
+                Notify("Já existe um produto com este id informado.");
+                return;
+            }
             await _productRepository.Add(product);
         }
         public async Task Update(Product product)
