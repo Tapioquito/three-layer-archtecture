@@ -1,4 +1,5 @@
 ﻿using AutoMapper;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using ProductsRegister.API.ViewModels;
 using ProductsRegister.Business.Interfaces;
@@ -7,6 +8,7 @@ using System.Net;
 
 namespace ProductsRegister.API.Controllers
 {
+    [Authorize]
     [Route("api/products")]
     public class ProductsController : MainController
     {

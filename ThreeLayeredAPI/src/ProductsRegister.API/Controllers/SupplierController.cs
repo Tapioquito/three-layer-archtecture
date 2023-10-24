@@ -1,4 +1,5 @@
 ﻿using AutoMapper;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using ProductsRegister.API.ViewModels;
 using ProductsRegister.Business.Interfaces;
@@ -58,6 +59,8 @@ namespace ProductsRegister.API.Controllers
             await _supplierRepository.Update(_mapper.Map<Supplier>(supplierViewModel));
             return CustomResponse(HttpStatusCode.NoContent);
         }
+
+        [Authorize(Roles = "Admin")]
         [HttpDelete("{id:guid}")]
         public async Task<ActionResult<SupplierViewModel>> Remove(Guid id)
         {
