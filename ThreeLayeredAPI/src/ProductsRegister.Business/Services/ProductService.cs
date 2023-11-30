@@ -8,7 +8,8 @@ namespace ProductsRegister.Business.Services
     {
         private readonly IProductRepository _productRepository;
 
-        public ProductService(IProductRepository productRepository, INotifier notifier) : base(notifier)
+        public ProductService(IProductRepository productRepository,
+            INotifier notifier, IUnitofWork uow) : base(notifier, uow)
         {
             _productRepository = productRepository;
         }
@@ -17,24 +18,27 @@ namespace ProductsRegister.Business.Services
         {
             if (!ExecuteValidation(new ProductValidation(), product)) return;
             var existingProduct = _productRepository.GetById(product.Id);
-            if(existingProduct != null)
+            if (existingProduct != null)
             {
                 Notify("Já existe um produto com este id informado.");
                 return;
             }
-            await _productRepository.Add(product);
+            _productRepository.Add(product);
+            await Commit();
         }
         public async Task Update(Product product)
         {
             if (!ExecuteValidation(new ProductValidation(), product)) return;
-            await _productRepository.Update(product);
+            _productRepository.Update(product);
+            await Commit();
         }
 
 
         public async Task Remove(Guid id)
         {
 
-            await _productRepository.Remove(id);
+            _productRepository.Remove(id);
+            await Commit();
         }
 
         public void Dispose()

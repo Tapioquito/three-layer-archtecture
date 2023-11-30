@@ -1,6 +1,7 @@
 ﻿using ProductsRegister.Business.Interfaces;
 using ProductsRegister.Business.Models;
 using ProductsRegister.Business.Models.Validations;
+using ProductsRegister.Business.Notifications;
 
 namespace ProductsRegister.Business.Services
 {
@@ -8,7 +9,8 @@ namespace ProductsRegister.Business.Services
     {
         private readonly ISupplierRepository _supplierRepository;
 
-        public SupplierService(ISupplierRepository supplierRepository, INotifier notifier) : base(notifier)
+        public SupplierService(ISupplierRepository supplierRepository,
+            INotifier notifier, IUnitofWork uow) : base(notifier, uow)
         {
             _supplierRepository = supplierRepository;
         }
@@ -28,7 +30,8 @@ namespace ProductsRegister.Business.Services
                 return;
             }
 
-            await _supplierRepository.Add(supplier);
+            _supplierRepository.Add(supplier);
+            await Commit();
         }
         public async Task Update(Supplier supplier)
         {
@@ -42,7 +45,8 @@ namespace ProductsRegister.Business.Services
                 Notify("Já existe um fornecedor com este documento informado");
                 return;
             }
-            await _supplierRepository.Update(supplier);
+            _supplierRepository.Update(supplier);
+             await Commit();
         }
 
 
@@ -65,9 +69,10 @@ namespace ProductsRegister.Business.Services
 
             if (address != null)
             {
-                await _supplierRepository.RemoveAddressSupplier(address);
+                _supplierRepository.RemoveAddressSupplier(address);
             }
-            await _supplierRepository.Remove(id);
+            _supplierRepository.Remove(id);
+             await Commit();
         }
 
         public void Dispose()

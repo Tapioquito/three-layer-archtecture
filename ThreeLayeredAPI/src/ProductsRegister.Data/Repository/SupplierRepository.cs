@@ -34,10 +34,10 @@ namespace ProductsRegister.Data.Repository
             return await Db.Addresses.AsNoTracking()
                 .FirstOrDefaultAsync(a => a.SupplierId == supplierId);
         }
-        public async Task RemoveAddressSupplier(Address address)
+        public void RemoveAddressSupplier(Address address)
         {
             Db.Addresses.Remove(address);
-            await SaveChanges();
+
         }
 
     }

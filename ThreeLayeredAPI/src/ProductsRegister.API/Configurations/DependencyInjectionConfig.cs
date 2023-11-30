@@ -2,6 +2,7 @@
 using ProductsRegister.Business.Notifications;
 using ProductsRegister.Data.Context;
 using ProductsRegister.Data.Repository;
+using ProductsRegister.Data.UoW;
 
 namespace ProductsRegister.API.Configurations
 {
@@ -11,6 +12,7 @@ namespace ProductsRegister.API.Configurations
         {
             //Data
             services.AddScoped<MyDbContext>();
+            services.AddScoped<IUnitofWork, UnitofWork>();
             services.AddScoped<IProductRepository, ProductRepository>();
             services.AddScoped<ISupplierRepository, SupplierRepository>();
 

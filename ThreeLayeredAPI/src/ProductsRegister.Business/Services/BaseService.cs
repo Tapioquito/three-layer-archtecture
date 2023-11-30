@@ -9,10 +9,12 @@ namespace ProductsRegister.Business.Services
     public abstract class BaseService
     {
         private readonly INotifier _notifier;
+        private readonly IUnitofWork _uow;
 
-        protected BaseService(INotifier notifier)
+        protected BaseService(INotifier notifier, IUnitofWork uow)
         {
             _notifier = notifier;
+            _uow = uow;
         }
 
         protected bool ExecuteValidation<TValidation, TEntity>(TValidation validation, TEntity entity)
@@ -38,5 +40,13 @@ namespace ProductsRegister.Business.Services
                 Notify(error.ErrorMessage);
             }
         }
+        protected async Task<bool> Commit()
+        {
+            if (await _uow.Commit()) return true;
+
+            Notify("Não foi possível salvar os dados no BD");
+            return false;
+        }
+
     }
 }

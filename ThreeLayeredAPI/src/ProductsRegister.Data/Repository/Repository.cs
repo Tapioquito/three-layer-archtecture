@@ -30,25 +30,25 @@ namespace ProductsRegister.Data.Repository
         {
             return await DbSet.AsNoTracking().Where(predicate).ToListAsync();
         }
-        public virtual async Task Add(TEntity entity)
+        public virtual void Add(TEntity entity)
         {
             DbSet.Add(entity);
-            await SaveChanges();
+
         }
-        public virtual async Task Update(TEntity entity)
+        public virtual void Update(TEntity entity)
         {
             DbSet.Update(entity);
-            await SaveChanges();
+
         }
 
 
 
-        public virtual async Task Remove(Guid id)
+        public virtual void Remove(Guid id)
         {
             //var entity = await GetById(id);
             DbSet.Remove(new TEntity { Id = id });
 
-            await SaveChanges();
+
         }
 
 

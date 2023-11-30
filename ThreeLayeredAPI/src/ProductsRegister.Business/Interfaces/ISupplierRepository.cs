@@ -10,7 +10,7 @@ namespace ProductsRegister.Business.Interfaces
         //retorna um fornecedor, seu endereço e TODOS os produtos que possui
         Task<Address> GetAddressBySupplier(Guid supplierId);
         //retorna apenas o endereço através do id do fornecedor;
-        Task RemoveAddressSupplier(Address address);
+        void RemoveAddressSupplier(Address address);
 
     }
 }

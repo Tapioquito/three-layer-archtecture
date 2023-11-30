@@ -5,12 +5,12 @@ namespace ProductsRegister.Business.Interfaces
 {
     public interface IRepository<TEntity> : IDisposable where TEntity : Entity
     {
-        Task Add(TEntity entity);
+        Task<IEnumerable<TEntity>> Search(Expression<Func<TEntity, bool>> predicate);
         Task<TEntity> GetById(Guid id);
         Task<List<TEntity>> GetAll();
-        Task Update(TEntity entity);
-        Task Remove(Guid id);
-        Task<IEnumerable<TEntity>> Search(Expression<Func<TEntity, bool>> predicate);
+        void Add(TEntity entity);
+        void Update(TEntity entity);
+        void Remove(Guid id);
         Task<int> SaveChanges();
         //retorna o número de linhas afetadas no commit
         //O que interessa é ser MAIOR que zero
